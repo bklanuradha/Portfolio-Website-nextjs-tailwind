@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+// Icons
+import { BsFillMoonStarsFill } from "react-icons/bs";
+
 
 export default function Home() {
   return (
@@ -16,8 +19,29 @@ export default function Home() {
         </style>
       </Head>
 
-      <main className="font-poppins">
-        <h1 className="bg-red-500 text-4xl">Hello</h1>
+      <main className="font-poppins bg-yellow-50 min-h-screen px-10">
+        {/*  nav and hero */}
+        <section>
+          {/* nav */}
+          <nav className="py-10 flex justify-between">
+            <h1 className="text-sm">Developed by Me</h1>
+            <ul className="flex items-center">
+              {/* Icon */}
+              <li>
+                <BsFillMoonStarsFill className="cursor-pointer text-xl mx-5" />
+              </li>
+              <li>
+                <a
+                  href="https://docs.google.com/document/d/1ncFjAgAP4ZjAWjADcuFm-qjZwstoz0hLqtH0eqgOVxI/edit?usp=sharing"
+                  download={"resume"}
+                  className="bg-yellow-400 text-black px-4 py-2 border-none rounded-md"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
       </main>
     </>
   );
