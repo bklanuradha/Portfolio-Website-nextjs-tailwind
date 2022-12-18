@@ -1,8 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+// Images
+import profileImage from "../public/p2.png";
+
 // Icons
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { AiOutlineGithub, AiFillLinkedin, AiOutlineInstagram} from "react-icons/ai";
 
 
 export default function Home() {
@@ -41,6 +45,38 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+
+          {/* hero */}
+
+          <div className="text-center p-10">
+            <h1 className="text-5xl font-bold text-yellow-400">Lakshmi Anuradha</h1>
+
+            <h3 className="text-2xl py-4">Frontend Developer</h3>
+            <p className="text-sm py-4 text-gray-400 leading-6">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Dignissimos impedit voluptate quod at esse tenetur atque,
+              architecto culpa doloribus minus iusto necessitatibus ipsum
+              corrupti accusantium ab cumque accusamus! Quaerat, saepe.
+            </p>
+          </div>
+
+          {/* socials */}
+          <div className="flex text-5xl justify-center gap-16 text-gray-600">
+            <a href="https://github.com/bklanuradha">
+              <AiOutlineGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/lakshmi-anuradha-53b679213/">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://www.instagram.com/anuradhakankanamge/">
+              <AiOutlineInstagram />
+            </a>
+          </div>
+
+          {/* profile */}
+          <div className="m-auto relative bg-gradient-to-b from-yellow-200 w-80 h-80 p-5 mt-20 rounded-full">
+            <Image src={profileImage} alt="profile image" layout="fill" objectFit="cover" />
+          </div>
         </section>
       </main>
     </>
