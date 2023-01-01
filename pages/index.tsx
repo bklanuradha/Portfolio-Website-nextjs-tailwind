@@ -209,6 +209,33 @@ export default function Home() {
             />
           </div>
         </section>
+
+        {/* Footer */}
+        <footer className="border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10">
+          <div>
+            <h3 className="text-base mb-2">Contact me for more details</h3>
+            <p className="opacity-40">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate est ea reiciendis magni architecto, minima neque modi
+              amet a, maxime debitis eius ipsam ab voluptatibus? Commodi
+              voluptas atque harum voluptatem?
+            </p>
+          </div>
+
+          <div>
+            <div className="flex text-5xl justify-center gap-16 text-gray-600">
+              <a href="https://github.com/bklanuradha">
+                <AiOutlineGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/lakshmi-anuradha-53b679213/">
+                <AiFillLinkedin />
+              </a>
+              <a href="https://www.instagram.com/anuradhakankanamge/">
+                <AiOutlineInstagram />
+              </a>
+            </div>
+          </div>
+        </footer>
       </main>
     </>
   );
