@@ -5,6 +5,10 @@ import Image from 'next/image'
 import profileImage from "../public/p2.png";
 import graphicDesign from "../public/design.png";
 import code from "../public/code.png";
+import image1 from "../public/web1.png"
+import image2 from "../public/web2.png";
+import image3 from "../public/web3.png";
+
 
 // Icons
 import { BsFillMoonStarsFill } from "react-icons/bs";
@@ -149,7 +153,60 @@ export default function Home() {
                 eius recusandae rerum voluptate, fugiat ex excepturi{" "}
               </p>
             </div>
+          </div>
+        </section>
 
+        {/* My Work */}
+        <section>
+          <div>
+            <h2 className="text-5xl py-10 font-bold opacity-60">Portfolio</h2>
+            <p className="text-sm py-2 text-gray-400 leading-6">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Dignissimos impedit voluptate quod at esse tenetur atque,
+              architecto culpa doloribus minus iusto necessitatibus ipsum
+              corrupti accusantium ab cumque accusamus! Quaerat, saepe.
+            </p>
+          </div>
+
+          {/* Images */}
+          <div className="flex flex-col gap-10 p-10">
+            <Image
+              src={image1}
+              alt="image 1"
+              layout="responsive"
+              className="rounded-lg object-cover"
+            />
+
+            <Image
+              src={image1}
+              alt="image 1"
+              layout="responsive"
+              className="rounded-lg object-cover"
+            />
+            <Image
+              src={image1}
+              alt="image 1"
+              layout="responsive"
+              className="rounded-lg object-cover"
+            />
+            <Image
+              src={image1}
+              alt="image 1"
+              layout="responsive"
+              className="rounded-lg object-cover"
+            />
+            <Image
+              src={image1}
+              alt="image 1"
+              layout="responsive"
+              className="rounded-lg object-cover"
+            />
+            <Image
+              src={image1}
+              alt="image 1"
+              layout="responsive"
+              className="rounded-lg object-cover"
+            />
           </div>
         </section>
       </main>
