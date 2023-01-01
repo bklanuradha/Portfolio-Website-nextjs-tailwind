@@ -3,6 +3,8 @@ import Image from 'next/image'
 
 // Images
 import profileImage from "../public/p2.png";
+import graphicDesign from "../public/design.png";
+import code from "../public/code.png";
 
 // Icons
 import { BsFillMoonStarsFill } from "react-icons/bs";
@@ -49,7 +51,9 @@ export default function Home() {
           {/* hero */}
 
           <div className="text-center p-10">
-            <h1 className="text-5xl font-bold text-yellow-400">Lakshmi Anuradha</h1>
+            <h1 className="text-5xl font-bold text-yellow-400">
+              Lakshmi Anuradha
+            </h1>
 
             <h3 className="text-2xl py-4">Frontend Developer</h3>
             <p className="text-sm py-4 text-gray-400 leading-6">
@@ -75,7 +79,77 @@ export default function Home() {
 
           {/* profile */}
           <div className="m-auto relative bg-gradient-to-b from-yellow-200 w-80 h-80 p-5 mt-20 rounded-full">
-            <Image src={profileImage} alt="profile image" layout="fill" objectFit="cover" />
+            <Image
+              src={profileImage}
+              alt="profile image"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        </section>
+
+        {/* services */}
+        <section>
+          <div>
+            <h2 className="text-5xl py-10 font-bold opacity-60">
+              Services I Offer
+            </h2>
+            <p className="text-sm py-2 text-gray-400 leading-6">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Dignissimos impedit voluptate quod at esse tenetur atque,
+              architecto culpa doloribus minus iusto necessitatibus ipsum
+              corrupti accusantium ab cumque accusamus! Quaerat, saepe.
+            </p>
+          </div>
+
+          {/* services cards */}
+          <div>
+            {/* card */}
+            <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+              <Image
+                src={graphicDesign}
+                alt="design image"
+                width={100}
+                height={100}
+                className="inline"
+              />
+              <h2 className="text-2xl font-bold">Graphic Designing</h2>
+              <p className="text-sm py-2 text-gray-800 leading-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+                eius recusandae rerum voluptate, fugiat ex excepturi{" "}
+              </p>
+            </div>
+
+            <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+              <Image
+                src={code}
+                alt="design image"
+                width={100}
+                height={100}
+                className="inline"
+              />
+              <h2 className="text-2xl font-bold">Application Development</h2>
+              <p className="text-sm py-2 text-gray-800 leading-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+                eius recusandae rerum voluptate, fugiat ex excepturi{" "}
+              </p>
+            </div>
+
+            <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+              <Image
+                src={graphicDesign}
+                alt="design image"
+                width={100}
+                height={100}
+                className="inline"
+              />
+              <h2 className="text-2xl font-bold">Web Development</h2>
+              <p className="text-sm py-2 text-gray-800 leading-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+                eius recusandae rerum voluptate, fugiat ex excepturi{" "}
+              </p>
+            </div>
+
           </div>
         </section>
       </main>
