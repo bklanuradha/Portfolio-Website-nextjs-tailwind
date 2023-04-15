@@ -202,52 +202,82 @@ export default function Home() {
           {/* Images */}
           <div className="flex flex-col gap-10 p-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
-              <Image
-                src={image1}
-                alt="image 1"
-                layout="responsive"
-                className="rounded-lg object-cover"
-              />
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: 3 }}
+                whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+              >
+                <Image
+                  src={image1}
+                  alt="image 1"
+                  layout="responsive"
+                  className="rounded-lg object-cover"
+                />
+              </motion.div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={image2}
-                alt="image 1"
-                layout="responsive"
-                className="rounded-lg object-cover"
-              />
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: 3 }}
+                whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+              >
+                <Image
+                  src={image2}
+                  alt="image 1"
+                  layout="responsive"
+                  className="rounded-lg object-cover"
+                />
+              </motion.div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={image1}
-                alt="image 1"
-                layout="responsive"
-                className="rounded-lg object-cover"
-              />
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: 3 }}
+                whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+              >
+                <Image
+                  src={image1}
+                  alt="image 1"
+                  layout="responsive"
+                  className="rounded-lg object-cover"
+                />
+              </motion.div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={image3}
-                alt="image 1"
-                layout="responsive"
-                className="rounded-lg object-cover"
-              />
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: 3 }}
+                whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+              >
+                <Image
+                  src={image3}
+                  alt="image 1"
+                  layout="responsive"
+                  className="rounded-lg object-cover"
+                />
+              </motion.div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={image1}
-                alt="image 1"
-                layout="responsive"
-                className="rounded-lg object-cover"
-              />
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: 3 }}
+                whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+              >
+                <Image
+                  src={image1}
+                  alt="image 1"
+                  layout="responsive"
+                  className="rounded-lg object-cover"
+                />
+              </motion.div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={image2}
-                alt="image 1"
-                layout="responsive"
-                className="rounded-lg object-cover"
-              />
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: 3 }}
+                whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+              >
+                <Image
+                  src={image2}
+                  alt="image 1"
+                  layout="responsive"
+                  className="rounded-lg object-cover"
+                />
+              </motion.div>
             </div>
           </div>
         </section>
