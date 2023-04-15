@@ -100,9 +100,10 @@ export default function Home() {
 
           {/* profile */}
           <motion.div
-          initial={{opacity:0 , scale:0.5}}
-          animate={{opacity:1 , scale:1}}
-          transition={{duration: 0.5}}>
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             <div className="m-auto relative bg-gradient-to-b from-yellow-200 w-80 h-80 p-5 mt-20 rounded-full">
               <Image
                 src={profileImage}
@@ -131,50 +132,56 @@ export default function Home() {
           {/* services cards */}
           <div className="md:flex lg:flex gap-10 mx-auto">
             {/* card */}
-            <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
-              <Image
-                src={graphicDesign}
-                alt="design image"
-                width={100}
-                height={100}
-                className="inline"
-              />
-              <h2 className="text-2xl font-bold">Graphic Designing</h2>
-              <p className="text-sm py-2 text-gray-800 leading-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-                eius recusandae rerum voluptate, fugiat ex excepturi{" "}
-              </p>
-            </div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+                <Image
+                  src={graphicDesign}
+                  alt="design image"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">Graphic Designing</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nihil eius recusandae rerum voluptate, fugiat ex excepturi{" "}
+                </p>
+              </div>
+            </motion.div>
 
-            <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
-              <Image
-                src={code}
-                alt="design image"
-                width={100}
-                height={100}
-                className="inline"
-              />
-              <h2 className="text-2xl font-bold">Application Development</h2>
-              <p className="text-sm py-2 text-gray-800 leading-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-                eius recusandae rerum voluptate, fugiat ex excepturi{" "}
-              </p>
-            </div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+                <Image
+                  src={code}
+                  alt="design image"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">Application Development</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nihil eius recusandae rerum voluptate, fugiat ex excepturi{" "}
+                </p>
+              </div>
+            </motion.div>
 
-            <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
-              <Image
-                src={graphicDesign}
-                alt="design image"
-                width={100}
-                height={100}
-                className="inline"
-              />
-              <h2 className="text-2xl font-bold">Web Development</h2>
-              <p className="text-sm py-2 text-gray-800 leading-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-                eius recusandae rerum voluptate, fugiat ex excepturi{" "}
-              </p>
-            </div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+                <Image
+                  src={graphicDesign}
+                  alt="design image"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">Web Development</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nihil eius recusandae rerum voluptate, fugiat ex excepturi{" "}
+                </p>
+              </div>
+            </motion.div>
           </div>
         </section>
 
